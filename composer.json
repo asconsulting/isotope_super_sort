@@ -1,0 +1,37 @@
+{
+    "name":"asconsulting/isotope_super_sort",
+    "description":"Customized sorting for Isotope eCommerce",
+    "homepage": "https://andrewstevens.consulting",
+    "keywords":["contao", "isotope", "ecommerce", "sorting"],
+    "type":"contao-module",
+    "license":"LGPL-3.0-or-later",
+    "authors":[
+        {
+            "name":"Andrew Stevens",
+            "homepage":"https://andrewstevens.consulting"
+        }
+    ],
+    "require":{
+        "php": "~5.4 || ~7.0",
+        "contao/core-bundle": "^3.5.2 || ~4.4",
+		"isotope/isotope-core": ">=2.0"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Asc\\": [
+                "system/modules/isotope_super_sort/library"
+            ]
+        }
+    },
+    "extra": {
+        "contao": {
+            "sources": {
+                "system/modules/isotope_super_sort": "system/modules/isotope_super_sort"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
