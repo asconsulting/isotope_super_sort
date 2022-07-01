@@ -3,18 +3,22 @@
 /**
  * Isotope Super Sort
  *
- * Copyright (C) 2018 Andrew Stevens Consulting
+ * Copyright (C) 2018-2022 Andrew Stevens Consulting
  *
  * @package    asconsulting/isotope_super_sort
  * @link       https://andrewstevens.consulting
  */
 
- 
-namespace Isotope\Module;
+
+
+namespace SuperSort\Module;
+
+use Isotope\Module\ProductList;
+
 
 class SuperSortList extends ProductList
 {
- 
+
 	/**
      * Find all products we need to list.
      *
@@ -25,7 +29,7 @@ class SuperSortList extends ProductList
     protected function findProducts($arrCacheIds = null)
     {
 		global $objPage;
-		
+
 		$arrProducts = parent::findProducts($arrCacheIds);
 
 		$arrOrderedProducts = array();
@@ -37,7 +41,7 @@ class SuperSortList extends ProductList
 					if ($objProduct->id == $product) {
 						$arrOrderedProducts[] = $objProduct;
 					}
-				}			
+				}
 			}
 
 			foreach($arrProducts as $objProduct) {
@@ -45,11 +49,11 @@ class SuperSortList extends ProductList
 					$arrUnorderedProducts[] = $objProduct;
 				}
 			}
-			
+
 			$arrProducts = array_merge($arrOrderedProducts, $arrUnorderedProducts);
 		}
-		
+
         return $arrProducts;
     }
-	
+
 }

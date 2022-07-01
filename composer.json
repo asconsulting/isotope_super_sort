@@ -12,17 +12,17 @@
         }
     ],
     "require":{
-        "php": "~5.4 || ~7.0",
-        "contao/core-bundle": "^3.5.2 || ~4.4",
-		"isotope/isotope-core": ">=2.0"
+        "php": ">=7.4",
+        "contao/core-bundle": ">=4.9",
+		"isotope/isotope-core": ">=2.6"
     },
     "require-dev": {
         "contao/manager-plugin": "^2.0"
     },
     "autoload": {
-        "psr-0": {
-            "Asc\\": [
-                "system/modules/isotope_super_sort/library"
+        "psr-4": {
+            "SuperSort\\": [
+                "system/modules/isotope_super_sort/library/SuperSort"
             ]
         }
     },
