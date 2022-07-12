@@ -17,7 +17,7 @@ namespace SuperSort\Backend;
 use Isotope\Model\Product;
 
 
-class SuperSortHelper extends Backend
+class SuperSortHelper extends \Isotope\Backend
 {
 
 
