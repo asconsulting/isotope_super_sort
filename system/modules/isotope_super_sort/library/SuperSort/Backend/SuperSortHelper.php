@@ -32,7 +32,7 @@ class SuperSortHelper extends \Isotope\Backend
 
 		$arrProducts = array();
 
-		if (count($objProducts)) {
+		if ($objProducts) {
 			while ($objProducts->next()) {
 				$arrProducts[$objProducts->id] = $objProducts->name ." " .$objProducts->color_or_design_name ." (SKU: " .$objProducts->sku .")";
 			}
