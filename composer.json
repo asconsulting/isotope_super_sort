@@ -8,7 +8,14 @@
     "authors":[
         {
             "name":"Andrew Stevens",
-            "homepage":"https://andrewstevens.consulting"
+            "homepage":"https://andrewstevens.consulting",
+            "role":"Developer"
+        },
+        {
+            "name":"Carolina Koehn",
+            "homepage":"https://kikmedia.de",
+            "role":"Translator"
+
         }
     ],
     "require":{
