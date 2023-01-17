@@ -25,7 +25,7 @@ $GLOBALS['TL_DCA']['tl_page']['fields']['iso_product_order'] = array
 	'exclude'                 => true,
 	'filter'                  => true,
 	'inputType'               => 'checkboxWizard',
-	'foreignKey'              => 'tl_iso_products.name',
+	'foreignKey'              => 'tl_iso_product.name',
 	'options_callback'        => array('SuperSort\Backend\SuperSortHelper', 'getProducts'),
 	'eval'                    => array('multiple'=>true),
 	'sql'                     => "blob NULL",
